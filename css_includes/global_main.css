@@ -1,0 +1,141 @@
+body {
+    margin-left: 0;
+    margin-top: 5em;
+    font-family: "Helvetica Neue", Arial, Sans-Serif;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    background-color: black;
+}
+
+table {
+    font-size: inherit;
+}
+
+p, li {
+    line-height: 150%;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.lindent { margin-left: 5em; }
+.sending-results {
+    font-weight: bold;
+    font-size: medium;
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+}
+
+div.sending-results {
+    width: calc(min(51em, 90vw)); /* TODO: unclear why it needs to be 51em when the main body is 40em */
+}
+
+table.sending-results {
+    width: calc(min(51em, 90vw) + 4em); /* TODO unclear why this needs to be 4em larger than the div */
+}
+
+table {
+    border-spacing: 0px;
+}
+
+table:first-child:not(.sending-results) td {
+    background-color: white;
+    width: calc(min(40em, 90vw) + 4em - 2px);
+    background-image: url(Harvard_University_logo.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1em;
+}
+
+table:last-child {
+    margin-bottom: 2em;
+}
+
+div.bar-container {
+    border: 1px solid;
+    border-color: #9ea4b1;
+    background-color: white;
+    margin-left: calc((min(40em, 0.8*100vw) + 2em) / 2 - 15px);
+    margin-top: 1.5em;
+}
+div.bar {
+    background-color: #a51b2f /*blue*/;
+}
+p.progress-text {
+    padding-top: 0.5em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-style: italic;
+    font-size: small;
+    line-height: normal;
+}
+p.practice-box {
+    color: blue;
+    height: 1.5em;
+    padding-bottom: 1em;
+    font-size: small;
+    text-align: center;
+}
+span.retry {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+span.retry:hover {
+    text-decoration: underline;
+}
+span.retry:visited {
+    color: blue;
+}
+
+/* 
+This section should be in PennController.css, but gets broken by the CSS mangling: 
+see https://github.com/addrummond/ibex/blob/master/docs/manual.md#css-mangling 
+*/
+
+.PennController-Scale {
+    flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+    .PennController-Button {
+        width: 100%;
+    }
+    
+    .PennController-Button-container {
+        width: 100%;
+    }
+    
+    .PennController-Scale {
+        flex-direction: column;
+    }
+  
+    .PennController-Scale label {
+        margin: 0.25em 0em;
+        width: 100%;
+        min-width: 12em;
+    }
+  
+    .PennController-Scale-container {
+        flex-direction: column;
+    }
+    
+    textarea {
+        border: 0.25em solid rgba(0, 0, 0, 0.06);
+        border-radius: 0.5em;
+    }
+  
+    .PennController-Scale + div .PennController-TextInput {
+        /* TextInput "inside" a scale (technically, following a scale) */
+        margin-top: -0.5em;
+        width: 14.5em;
+        padding-top: 0em;
+        height: auto;
+    }
+}

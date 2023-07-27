@@ -1,0 +1,13 @@
+group,item,sentence,condition
+A,1,Every student enjoyed their essay topic.,ScE_Q_B
+A,2,Their target caused every salesperson difficulties.,ScS_Q_CO
+A,3,John enjoyed his assignment.,ScE_P_B
+A,4,Her monthly objectives caused Diana difficulties.,ScS_P_CO
+A,5,"When she went camping with Mary, Rachel sprayed her with bug spray.",ScB_F_NA
+A,6,A newspaper reported that the stolen painting was found by an art museum.,ScN_F_A
+B,1,Their essay topic frustrated every student.,ScE_Q_CO
+B,2,Every salesperson met their target.,ScS_Q_B
+B,3,His assignment frustrated John.,ScE_P_CO
+B,4,Diana met her monthly objectives.,ScS_P_B
+B,5,"When she went camping with Mary, Rachel sprayed her with bug spray.",ScB_F_NA
+B,6,A newspaper reported that the stolen painting was found by an art museum.,ScN_F_A
