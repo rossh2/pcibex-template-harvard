@@ -53,6 +53,11 @@ strong.highlight {
     min-width: 3em;
 }
 
+.Scale label.scale-selected {
+	background-color: #a51b2f;
+	color: white;
+}
+
 .Scale div {
     margin-right: 0em;
 }
