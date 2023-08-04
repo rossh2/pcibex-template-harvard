@@ -45,7 +45,7 @@ function makeTrial(trial_label, row) {
      * If you want to add more items, just copy a trial_elements.push(...) section and put it in the
      * right place in the order of elements.
      */
-    trial_elements = []
+    let trial_elements = []
     trial_elements.push(
         newText("question", "<p>How natural is the following sentence?</p>")
             .center()
